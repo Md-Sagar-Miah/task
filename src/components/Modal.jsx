@@ -17,7 +17,7 @@ const Modal = ({ handleModalOpen }) => {
         }).then(res => {
             if (res.ok) {
                 toast.success("File uploaded.")
-                console.log(res.ok)
+                setFiles([])
             }
         }).catch((error) => {
             toast.error(error.toString())
@@ -69,7 +69,7 @@ const Modal = ({ handleModalOpen }) => {
                                 const lastDotIndex = file.name.lastIndexOf(".");
                                 const extension = file.name.slice(lastDotIndex + 1);
                                 return (
-                                    <li className='flex justify-between my-2' key={index}>
+                                    <li className='flex justify-between my-2 overflow-auto' key={index}>
                                         <span><span className='me-1'>{index + 1}.</span>{file.name} - {file.size} bytes</span>
                                         {['png', 'jpeg', 'jpg'].includes(extension) ? <img className=' h-5 w-5' src={URL.createObjectURL(file)} alt='file'></img> : <p>{extension}</p>}
                                     </li>
