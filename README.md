@@ -1,8 +1,18 @@
-# React + Vite
+Task Completed
+----------------
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1-Frontend
+Live: https://task-seven-alpha.vercel.app/
+GitHub: https://github.com/Md-Sagar-Miah/task.git
 
-Currently, two official plugins are available:
+2-Backend:
+GitHub: https://github.com/Md-Sagar-Miah/multipleFileUpload-API.git
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Note: For Backend connection you need to clone the backend repository in local device and I give here require database URL in .env file so it also pushed on GitHub.
+
+To run the backend you need to run this command -> npm run dev
+
+After run the backend sever the frontend can interact with the backend.
+To upload file you must need to run the server in local machine. 
+
+Thank you.
